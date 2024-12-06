@@ -1,0 +1,382 @@
+
+.container {
+  padding: 50px 20px;
+}
+
+.pricing__top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing__top h2 {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+}
+
+.pricing__wrapper {
+  display: inline-block;
+  margin: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.pricing__item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 300px;
+}
+
+.pricing__item:hover {
+  transform: translateY(-10px);
+}
+
+.pricing__card-top h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pricing__card-top .pricing {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.services ul li {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.services button {
+  padding: 10px 20px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.services button:hover {
+  background: #5b52e4;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.payment-options .payment-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-options .payment-btn:hover {
+  background: #5b52e4;
+}
+
+
+@media (max-width: 768px) {
+  .pricing__wrapper {
+    flex-direction: column;
+  }
+}
+
+
+
+/* ******************************************************************** */
+
+/* General Styling
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.highlights {
+  color: #ff6600;
+}
+
+.pricing__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.pricing__item {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.pricing__card-top h2 {
+  margin: 10px 0;
+}
+
+.pricing {
+  font-size: 1.5rem;
+  color: #ff6600;
+}
+
+.services {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.services ul {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.register__btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.register__btn:hover {
+  background-color: #e05d00;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payment-btn:hover {
+  background-color: #007bb5;
+}
+
+.bank-selection {
+  margin-top: 20px;
+}
+
+.bank-selection label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bank-selection select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .pricing__wrapper {
+    flex-direction: column;
+  }
+
+  .pricing__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+} */ 
+
+
+/* ******************************************************************** */
+
+/* 
+.pricing__top{
+    text-align: center;
+}
+
+.pricing__top h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.pricing__top p{
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+.pricing__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+.pricing__item{
+    box-shadow: rgba(0,0,0,0.15) 0px 5px 15px 0px;
+    border-radius: 5px;
+    width: 33%;
+    background: #fff;
+}
+
+.pricing__card-top{
+    padding: 30px;
+    border-bottom: 1px solid #d3cef2;
+}
+.pricing__card-top h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+}
+.pricing__card-top .pricing{
+    font-size: 1.4rem;
+}
+.pricing__card-top .pricing span{
+    font-size: 1rem;
+    color: #666;
+}
+
+.pricing__item .services{
+    padding: 20px;
+}
+
+.pricing__item .services ul li{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    color: #666;
+}
+
+.pricing__item .services ul li span i{
+    font-size: 0.7rem;
+}
+
+.services{
+    text-align: center;
+}
+.services button{
+    margin-top: 50px;
+}
+
+.pricing__item-02 .pricing__card-top{
+background: var(--primary-color);
+border-radius: 5px 5px 0px 0px;
+}
+
+.pricing__item-02 .pricing__card-top h2{
+color: #fff;
+font-weight: 500;
+}
+
+.pricing__item-02 .pricing__card-top h2 span{
+    color: #d3cef2;
+}
+
+.pricing__item-02 .services ul li span i{
+color: var(--primary-color);
+}  */
+
+
+
+
+
+

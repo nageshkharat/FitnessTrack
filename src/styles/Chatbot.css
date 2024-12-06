@@ -1,0 +1,115 @@
+/* src/Chatbot.css */
+
+/* Chatbot toggle button */
+.chatbot-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    /* background-color: #6f55f2; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .chatbot-toggle img {
+    width: 140px;
+    height: 140px;
+  }
+  
+  /* Chatbot container */
+  .chatbot-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #6f55f2;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+  }
+  
+  .chat-header button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .chat-window {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+  }
+  
+  .bot {
+    background-color: #e3e3e3;
+    align-self: flex-start;
+  }
+  
+  .user {
+    background-color: #6f55f2;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #6f55f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6f55f2;
+  }
+  

@@ -1,0 +1,75 @@
+.fitness-dashboard {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 20px auto;
+  color: #333;
+}
+
+.fitness-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fitness-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.user-fitness {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fitness-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.admin-panel {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.update-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.update-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.update-btn {
+  background-color: #44219c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+}
